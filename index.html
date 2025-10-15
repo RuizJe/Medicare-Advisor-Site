@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Local Medicare Advisor - Free Plan Comparison</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font and Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Very light blue-gray background */
+        }
+        .container-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        .cta-button-primary {
+            /* Custom blue gradient for trustworthiness */
+            background-image: linear-gradient(to right, #1d4ed8, #2563eb);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+        }
+        .number-box {
+            background-color: #e0f2f7; /* Light cyan background for focus */
+            border: 4px solid #06b6d4; /* Strong border color */
+            animation: pulse 2s infinite;
+        }
+
+        /* Animation for the primary call to action */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(6, 182, 212, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="flex justify-between items-center container-section py-3 sm:py-4">
+            <h1 class="text-2xl font-extrabold text-blue-700">
+                Medicare <span class="text-cyan-500">Advisor</span>
+            </h1>
+            <!-- Secondary CTA (only visible on large screens) -->
+            <a href="tel:602-399-4624" class="hidden md:block px-5 py-2 text-white bg-green-500 rounded-full font-semibold hover:bg-green-600 transition duration-150 shadow-md">
+                Call Now: 602-399-4624
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section - Focus on the CTA -->
+    <section class="container-section text-center bg-white rounded-xl shadow-2xl mt-8 mb-16 p-8 sm:p-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
+            Confused By Medicare Advantage Plans?
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+            I offer <span class="font-bold text-cyan-600">Free, Local, and Unbiased</span> comparison help to find the perfect plan for your needs and budget.
+        </p>
+
+        <!-- Primary CTA: The Phone Number -->
+        <div class="number-box inline-block p-6 rounded-2xl shadow-xl">
+            <p class="text-lg font-medium text-blue-700 mb-2">Speak to a Licensed Advisor Today:</p>
+            <a href="tel:602-399-4624" class="text-5xl md:text-6xl font-extrabold text-blue-800 hover:text-blue-900 transition duration-150 whitespace-nowrap">
+                602-399-4624
+            </a>
+            <p class="text-sm font-medium text-gray-500 mt-2">Available Mon - Fri, 8:00 AM - 8:00 PM (CST)</p>
+        </div>
+
+        <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+            class="mt-12 px-8 py-3 bg-green-500 text-white font-semibold text-lg rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+            How I Can Help You
+        </button>
+    </section>
+
+    <!-- Services / Value Proposition Section -->
+    <section id="services" class="container-section">
+        <h3 class="text-3xl font-bold text-center text-blue-700 mb-12">I Help You Navigate the Complex Choices</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Card 1: Comprehensive Comparison -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-cyan-500">
+                <svg class="w-10 h-10 text-cyan-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M10 12h.01"></path></svg>
+                <h4 class="text-xl font-bold mb-3 text-blue-800">Compare All Local Plans</h4>
+                <p class="text-gray-600">I search and compare Medicare Advantage plans from **all major carriers** in your area to ensure you don't miss any options or benefits.</p>
+            </div>
+
+            <!-- Card 2: Cost & Savings Focus -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-cyan-500">
+                <svg class="w-10 h-10 text-cyan-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V9m0 3v2m0 6a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                <h4 class="text-xl font-bold mb-3 text-blue-800">Maximize Your Benefits</h4>
+                <p class="text-gray-600">Focusing on **copays, deductibles, drug coverage, and extra perks** (dental, vision, gym memberships) to save you money.</p>
+            </div>
+
+            <!-- Card 3: Personalized, Stress-Free Advice -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-cyan-500">
+                <svg class="w-10 h-10 text-cyan-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20v-2c0-.656-.126-1.283-.356-1.857M9 20H4v-2a3 3 0 015-2.236M9 20v-2a3 3 0 00-3-3.264m0 0a3 3 0 013-3.264m0 0H4a2 2 0 01-2-2V7a2 2 0 012-2h3M7 12V5h6v12h-4v-2m4-2a2 2 0 00-2-2h-2V5m0 7v3"></path></svg>
+                <h4 class="text-xl font-bold mb-3 text-blue-800">Zero-Cost, Expert Guidance</h4>
+                <p class="text-gray-600">My services are completely **free to you**. I cut through the industry jargon and paperwork to find your ideal fit, stress-free.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me / Trust Section -->
+    <section class="bg-blue-900 text-white mt-16">
+        <div class="container-section flex flex-col md:flex-row items-center gap-10">
+            <!-- Advisor Photo (Placeholder) -->
+            <div class="w-full md:w-1/3 flex justify-center">
+                <img
+                    src="https://placehold.co/300x300/102c5f/ffffff?text=Jessica+Ruiz"
+                    onerror="this.onerror=null; this.src='https://placehold.co/300x300/102c5f/ffffff?text=Jessica+Ruiz';"
+                    alt="Licensed Medicare Advisor Jessica Ruiz"
+                    class="rounded-full w-48 h-48 object-cover ring-4 ring-cyan-500 shadow-2xl"
+                >
+            </div>
+
+            <!-- Text Content -->
+            <div class="w-full md:w-2/3 text-center md:text-left">
+                <h3 class="text-3xl font-bold mb-4 text-cyan-400">Meet Your Local Advisor, Jessica Ruiz</h3>
+                <p class="text-blue-200 mb-4">
+                    As a licensed and independent Medicare advisor, my goal is simple: to make sure you have the coverage you need without overpaying. I am not tied to any single insurance company, which means my advice is always focused on your best interest.
+                </p>
+                <p class="text-blue-200 font-semibold">
+                    I've helped hundreds of people in the area save money and gain peace of mind. Let me do the same for you!
+                </p>
+                <a href="tel:602-399-4624" class="mt-6 inline-block px-8 py-3 bg-green-500 text-white font-bold rounded-full shadow-lg hover:bg-green-600 transition duration-300 text-lg">
+                    Ready to Compare? Call Now.
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Disclaimer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container-section text-center">
+            <h4 class="text-xl font-bold text-cyan-500 mb-2">Connect with Jessica Ruiz</h4>
+            <a href="tel:602-399-4624" class="text-3xl font-extrabold text-white hover:text-cyan-400 transition duration-150 block mb-6">
+                602-399-4624
+            </a>
+
+            <!-- Placeholder for mandatory Medicare Disclaimer -->
+            <div class="text-xs text-gray-400 mt-8 pt-4 border-t border-gray-700">
+                <p class="font-bold mb-2">Important Disclaimer:</p>
+                <p>
+                    I am a licensed insurance agent. I represent Medicare Advantage Organizations and Prescription Drug Plans that have contracts with the Federal government. Enrollment depends on contract renewal.
+                    This is a solicitation for insurance. A licensed insurance agent may contact you.
+                </p>
+                <p class="mt-4">&copy; <span id="current-year"></span> Your Medicare Advisor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Optional: Implement a subtle scroll spy to highlight navigation if you had multiple sections
+        // Since we only have a jump button, we will stick with smooth scrolling for the button
+    </script>
+</body>
+</html>
